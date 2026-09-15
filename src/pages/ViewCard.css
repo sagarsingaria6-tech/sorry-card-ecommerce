@@ -1,0 +1,99 @@
+.view-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+}
+
+.card-display {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-header {
+  background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.card-header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.card-photo {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-message {
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.card-message p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.card-footer {
+  background: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.card-footer p {
+  margin: 0;
+  color: #e91e63;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.error {
+  color: #c2185b;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .card-header h1 {
+    font-size: 24px;
+  }
+
+  .card-message {
+    padding: 20px 15px;
+  }
+
+  .card-message p {
+    font-size: 14px;
+  }
+}
