@@ -1,0 +1,27 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 80px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-bottom: 70px;
+  }
+}
