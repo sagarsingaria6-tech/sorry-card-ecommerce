@@ -1,0 +1,52 @@
+.scanner-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.scanner-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.scanner-card h1 {
+  color: #e91e63;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.scanner-card > p {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+#qr-reader {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#qr-reader__camera_permission_prompt {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.error {
+  color: #c2185b;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .scanner-card {
+    padding: 20px;
+  }
+
+  .scanner-card h1 {
+    font-size: 24px;
+  }
+}
